@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
     <title>Dental Pro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
 </head>
 
 <body>
@@ -49,7 +51,7 @@
             <button class="page-btn">Appointment</button>
         </div>
         <div class="hero-img">
-            <img src="Assets/hero.png" alt="">
+            <img src="Assets/hero.png" alt="Loading...">
         </div>
 
     </section>
@@ -64,44 +66,53 @@
             <div class="arr2"></div>
             <div class="arr3"></div>
         </div>
-        <div class="cards-container">
-            <div class="card">
-                <div class="card-image">
-                    <img class="white-image" src="./Assets/twhite.jpeg" alt="Avatar" style="width:100%">
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="Assets/twhite.jpeg" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">Tooth Whitening</div>
+                        <div class="blog-slider__text">Tooth whitening ca be a very effective way of lightening the
+                            natural colour of your teeth without removing anything.
+
+                        </div>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h2>Tooth Whitening </h2>
-                    <p> Tooth whitening ca be a very effective way of lightening the natural colour of your
-                        teeth without removing anything.</p>
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="Assets/dimpla.jpeg" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">Dental Implant</div>
+                        <div class="blog-slider__text">With the use of our modern technology, your smile will be back to
+                            feel less anxious to show face and express your emotion.</div>
+                    </div>
                 </div>
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="Assets/textrac.jpeg" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <div class="blog-slider__title">Tooth Extraction</div>
+                        <div class="blog-slider__text">With comfortable and painless strategy, we extract tooth and your
+                            health would be restored, Say no to Pain.</div>
+                    </div>
+                </div>
+
             </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="./Assets/dimpla.jpeg" alt="Avatar" style="width:100%">
-                </div>
-                <div class="card-content">
-                    <h2>Dental Implant</h2>
-                    <p>With the use of our modern technology, your smile will be back to feel less anxious to show face
-                        and express your emotion.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="./Assets/textrac.jpeg" alt="Avatar" style="width:100%">
-                </div>
-                <div class="card-content">
-                    <h2>Tooth Extraction </h2>
-                    <p> With comfortable and painless strategy, we extract tooth and your health would be restored,
-                        Say no to Pain.
-                    </p>
-                </div>
-            </div>
+            <div class="blog-slider__pagination"></div>
         </div>
 
 
     </section>
 </body>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
 <script src="app.js"></script>
 
 </html>
