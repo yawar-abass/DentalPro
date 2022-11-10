@@ -19,19 +19,24 @@
     <!-- Navigation Start -->
     <header class="row container">
         <a href="#" class="logo"> <img src="Assets/logo.jpeg" class="imgLogo" alt="Dental Pro"></a>
-        <span class="material-symbols-outlined toggleMenu" onclick="toggleMenu()">
+        <div class="toggleMenu " onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <!-- <span class="material-symbols-outlined toggleMenu" onclick="toggleMenu()">
             menu
         </span>
-        <span class="material-symbols-outlined cross">
+        <span class="material-symbols-outlined cross" onclick="toggleMenu()">
             close
-        </span>
+        </span> -->
 
         <nav class="navigation row">
             <ul class="row">
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contactUs">Contact Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -57,14 +62,14 @@
     </section>
     <!-- Main Section End  -->
 
-    <section class="services container">
+    <!-- Services Section  -->
+
+    <section class="services container" id="services">
         <h2>Our Main Services</h2>
         <div class="blue-line1"></div>
         <p>We give top-notch services that give you a better Dental experience. Explore few of our services below </p>
         <div class="box">
-            <div class="arr1"></div>
-            <div class="arr2"></div>
-            <div class="arr3"></div>
+
         </div>
         <div class="blog-slider">
             <div class="blog-slider__wrp swiper-wrapper">
@@ -107,9 +112,89 @@
             </div>
             <div class="blog-slider__pagination"></div>
         </div>
-
-
     </section>
+
+    <!-- Services Section End -->
+
+    <!-- About Section  -->
+
+    <section id="about">
+        <h1> Short Story About Us</h1>
+        <div class="blue-line2"></div>
+        <div class="video-container">
+            <video controls="controls"
+                poster="https://symbiosisuniversityhospital.com/assets/images/dentistry/Dentistry-1.jpg" />
+
+            <source src="Assets/vd.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="about-content">
+            <div class="about-card">
+                <span class="material-symbols-outlined  tick">
+                    check_circle
+
+                </span>
+                <h2>Top Quality Dental Team</h2>
+            </div>
+            <div class="about-card">
+                <span class="material-symbols-outlined  tick">
+                    check_circle
+                </span>
+                <h2>Standard Technology</h2>
+            </div>
+            <div class="about-card">
+                <span class="material-symbols-outlined  tick">
+                    check_circle
+                </span>
+                <h2>Satisfaction Guarantee</h2>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+        <div class="dentalPro">
+            <img src="Assets/logo.jpeg" alt="Dental Pro">
+            <p>DENTAL PRO cares a lot about your health and your well being. Our team of experts gives you the best
+                dental services and keep your health balanced.</p>
+            <a href="" class="logos"><img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png"
+                    alt="FaceBook"></a>
+            <a href="" class="logos"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4n_urpJ9XpwOTdzBVbGvactwHrPagYQrTJPYjxfxLGkSyu7nJZVqRVGAeohnPgKMrnKE&usqp=CAU"
+                    alt="Twitter"></a>
+            <a href="" class="logos"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                    alt="LinkedIn"></a>
+        </div>
+        <div class="support">
+            <h2>Support</h2>
+            <ul>
+                <li>Appointment</li>
+                <li>FeedBack</li>
+                <li>Consultation Call</li>
+                <li>Support Center</li>
+                <li>Appointment</li>
+            </ul>
+        </div>
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <div class="phone"><span class="material-symbols-outlined ct">
+                    call
+                </span>(671)555-0110</div>
+            <div class="email"><span class="material-symbols-outlined ct">
+                    mail
+                </span>info@dentalpro.com</div>
+            <div class="timing"><span class="material-symbols-outlined ct">
+                    nest_clock_farsight_analog
+                </span>Mon-Fri [07:00 - 18:000]</div>
+            <div class="location"><span class="material-symbols-outlined ct">
+                    location_on
+                </span>2715 Ash Dr. San Jose, Srinagar Kashmir </div>
+        </div>
+    </footer>
 </body>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
