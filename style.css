@@ -414,7 +414,7 @@ video {
     .main-content {
         margin: .5em;
         padding: .5em;
-        height: 100vh;
+        height: 90vh;
         flex-direction: column;
         background-image: url(./Assets/hero.png);
         background-repeat: no-repeat;
@@ -465,11 +465,7 @@ video {
     }
 
 
-    /* .toggleMenu .active {
-        position: fixed;
-        right: 5%;
 
-    } */
 
     .navigation {
         flex-direction: column;
@@ -480,6 +476,7 @@ video {
         margin: auto;
         min-height: 0;
         opacity: 0;
+        transition: 0.3s ease-in-out;
         transform: scale(0);
 
     }
@@ -488,6 +485,7 @@ video {
         position: fixed;
         min-height: 100vh;
         opacity: 1;
+        transform: translate3d(34px, 34px, 34px);
         background: var(--cl-1);
         z-index: 999;
         transform: scale(1);

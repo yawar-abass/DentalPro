@@ -18,7 +18,7 @@
 
 ### Demo Screeshots
 
-![Dentelo Desktop Demo](./Assets/readme.png"Desktop Demo")
+![Dentelo Desktop Demo](./Assets/readme.png "Desktop Demo")
 
 ### Prerequisites
 

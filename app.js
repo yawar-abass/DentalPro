@@ -1,17 +1,16 @@
-
-// function toggleMenu() {
-//   const toggleMenu = document.querySelector('.toggleMenu');
-//   const cross = document.querySelector('.cross');
-//   const navigation = document.querySelector('.navigation');
-//   toggleMenu.classList.toggle('active');
-//   navigation.classList.toggle('active');
-
-// }
+const toggle = document.querySelector('.toggleMenu');
+const navigation = document.querySelector('.navigation');
 function toggleMenu(x) {
-  const navigation = document.querySelector('.navigation');
   x.classList.toggle("change");
   navigation.classList.toggle('active');
+
 }
+
+const togglebtn = () => {
+  navigation.classList.toggle('active');
+  toggle.classList.toggle("change");
+}
+
 
 var swiper = new Swiper('.blog-slider', {
   spaceBetween: 30,
